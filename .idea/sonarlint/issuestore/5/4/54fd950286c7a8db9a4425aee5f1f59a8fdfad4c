@@ -1,0 +1,5 @@
+
+j
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(»Ì©éýÿÿÿÿ8»¤Ù¤Ü1
+^	java:S899"BDo something with the "boolean" value returned by "createNewFile".(´ÂÖÙ8Ã¤Ù¤Ü1
+G	java:S106"+Replace this use of System.err by a logger.(³àüá8Å¤Ù¤Ü1
