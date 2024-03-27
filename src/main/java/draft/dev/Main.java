@@ -15,7 +15,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[]args) {
-        AssemblyAI client = AssemblyAI.builder().apiKey("62053e25eb0b4512a79e1dae34744f83").build(); //Remember to remove API Key
+        AssemblyAI client = AssemblyAI.builder().apiKey("40caa1cc739c412a9cb69780a7ae041a").build(); //Remember to remove API Key
 
         try {
             File audioFile = new File("./audio/apple_public_earnings_call.mp3");
@@ -38,15 +38,15 @@ public class Main {
                 Desktop desktop = Desktop.getDesktop();
                 desktop.open(outputFile);
 
-/*                //Generate prompt
+                //Generate prompt
                 var params = LemurTaskParams.builder()
-                        .prompt("Extract insights from the transcript.").transcriptIds(List.of(transcript.getId()))
+                        .prompt("Extract insights from the transcript.").transcriptIds(List.of("8f072a17-0a8b-40ce-ba15-5e9fc5e90daa"))
                         .build();
                 //Execute prompt
                 var result = client.lemur().task(params);
 
                 //Print response
-                System.out.println(result.getResponse());*/
+                System.out.println(result.getResponse());
 
 
             }
