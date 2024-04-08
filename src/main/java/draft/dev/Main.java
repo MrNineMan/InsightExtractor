@@ -19,33 +19,33 @@ public class Main {
 
         try {
             File audioFile = new File("./audio/apple_public_earnings_call.mp3");
-            //Create a new output file and filewriter for the transcription
+            // Create a new output file and filewriter for the transcription
             File outputFile = new File("output.txt");
             outputFile.createNewFile();
             FileWriter fileWriter = new FileWriter(outputFile);
-            //Transcribe audio file
+            // Transcribe audio file
             Transcript transcript = client.transcripts().transcribe(outputFile);
 
 
-            //Checks to see if transcription was successful
+            // Checks to see if transcription was successful
             if (transcript.getStatus().toString().contentEquals("error")) {
                 System.err.println(transcript.getError());
             } else {
-                //Write transcript to output file
+                // Write transcript to output file
                 fileWriter.write(String.valueOf(transcript.getText()));
                 fileWriter.close();
-                //Opens output file
+                // Opens output file
                 Desktop desktop = Desktop.getDesktop();
                 desktop.open(outputFile);
 
-                //Generate prompt
+                // Generate prompt
                 var params = LemurTaskParams.builder()
                         .prompt("Extract insights from the transcript.").transcriptIds(List.of("8f072a17-0a8b-40ce-ba15-5e9fc5e90daa"))
                         .build();
-                //Execute prompt
+                // Execute prompt
                 var result = client.lemur().task(params);
 
-                //Print response
+                // Print response
                 System.out.println(result.getResponse());
 
 
