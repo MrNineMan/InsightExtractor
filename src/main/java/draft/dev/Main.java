@@ -24,7 +24,7 @@ public class Main {
             outputFile.createNewFile();
             FileWriter fileWriter = new FileWriter(outputFile);
             // Transcribe audio file
-            Transcript transcript = client.transcripts().transcribe(outputFile);
+            Transcript transcript = client.transcripts().transcribe(audioFile);
 
 
             // Checks to see if transcription was successful
