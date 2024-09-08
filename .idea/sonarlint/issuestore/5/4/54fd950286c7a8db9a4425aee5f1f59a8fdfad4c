@@ -1,14 +1,6 @@
 
 j
-java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(»Ì©éıÿÿÿÿ8éÔ„İâ1
-_
-java:S1854"=Remove this useless assignment to local variable "audioFile".(üè·şÿÿÿÿ8š¡úÜâ1
-P
-java:S1481".Remove this unused "audioFile" local variable.(üè·şÿÿÿÿ8¢¡úÜâ1
-^	java:S899"BDo something with the "boolean" value returned by "createNewFile".(´ÂÖÙ8¤¡úÜâ1
-G	java:S106 "+Replace this use of System.err by a logger.(³àüá8§¡úÜâ1
-]	java:S125,"<This block of commented-out lines of code should be removed.(­Ÿ¤´şÿÿÿÿ8ª¡úÜâ1
-t
-java:S1128"XRemove this unused import 'com.assemblyai.api.resources.lemur.requests.LemurTaskParams'.(ÔÌÕ	8úÔ„İâ1
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ûÔ„İâ1
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(»Ì©éıÿÿÿÿ8¼’ü•2
+^	java:S899"BDo something with the "boolean" value returned by "createNewFile".(´ÂÖÙ8ì’ü•2
+G	java:S106 "+Replace this use of System.err by a logger.(³àüá8ö’ü•2
+L	java:S1062"+Replace this use of System.out by a logger.(íÑÚêÿÿÿÿÿ8æ‰º‚ã1
