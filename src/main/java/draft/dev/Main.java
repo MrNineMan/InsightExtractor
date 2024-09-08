@@ -18,7 +18,7 @@ public class Main {
         AssemblyAI client = AssemblyAI.builder().apiKey("40caa1cc739c412a9cb69780a7ae041a").build(); //Remember to remove API Key
 
         try {
-            File audioFile = new File("./audio/apple_public_earnings_call.mp3");
+            File audioFile = new File("./audio/apple_public_earnings_call.flac");
             // Create a new output file and filewriter for the transcription
             File outputFile = new File("output.txt");
             outputFile.createNewFile();
